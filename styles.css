@@ -1,0 +1,126 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0077b6;
+}
+
+.underline {
+    width: 50px;
+    height: 2px;
+    background-color: #0077b6;
+    margin: 0 auto 30px;
+    transition: width 0.3s;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #0077b6;
+}
+
+.hover-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0077b6;
+    transition: width 0.3s;
+}
+
+input[type="text"]:focus + .hover-bar,
+input[type="email"]:focus + .hover-bar,
+input[type="password"]:focus + .hover-bar {
+    width: 100%;
+}
+
+button.auth-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077b6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.auth-btn:hover {
+    background-color: #005f99;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Hidden class for toggling forms */
+.hidden {
+    display: none;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    .form-box {
+        padding: 20px;
+    }
+}
